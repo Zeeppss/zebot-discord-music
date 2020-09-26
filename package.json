@@ -1,7 +1,7 @@
 {
-  "name": "music-bot-example",
+  "name": "zebot-discord-music",
   "version": "1.1.0",
-  "description": "A dedicated music bot example project for Zhycorp Development made by iCrawl",
+  "description": "A dedicated zebot-discord-music project Made by Zeeppss",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhycorp/music-bot-example.git"
+    "url": "git+https://github.com/zeeppss/zebot-discord-music.git"
   },
   "keywords": [
     "JavaScript",
     "NodeJS",
     "Npm",
-    "Zhycorp"
+    "Zeeppss"
   ],
   "author": "iCrawl",
   "license": "by-nc-nd/4.0",
   "bugs": {
-    "url": "https://github.com/zhycorp/music-bot-example/issues"
+    "url": "https://github.com/zeeppss/zebot-discord-music/issues"
   },
-  "homepage": "https://github.com/zhycorp/music-bot-example#readme",
+  "homepage": "https://github.com/zeeppss/zebot-discord-music#readme",
   "engines": {
     "node": "12.x"
   },
