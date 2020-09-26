@@ -19,4 +19,8 @@
 **4).** > **Lalu masukkan juga** `yt apikey` **kalian serta** `project_modules` **yang berarti nama projek kalian!**
 
 
- **Cara mendapatkan Youtube Api Key dengan cara mengklik link ini** --> [ytapikey]developers.google.com
+ **Cara mendapatkan Youtube Api Key dengan cara membuka link ini** --> `developers.google.com`
+ 
+ **Dan jangan lupa untuk menginstall discord bot nya ^_^**
+ 
+ **Ingin menghubungin Devnya?** `Discord: Zeeppss#6552`
