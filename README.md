@@ -1,7 +1,7 @@
 # zebot-discord-music
 
 # Installation
-**1).** > **Download file dengan bentuk `.zip`
+**1).** > **Download file dengan bentuk** `.zip`
 
 **2).** > **Lalu ubah namanya sesuai keinginan kalian**
 
@@ -19,7 +19,7 @@
 **4).** > **Lalu masukkan juga** `yt apikey` **kalian serta** `project_modules` **yang berarti nama projek kalian!**
 
 
- **Cara mendapatkan Youtube Api Key dengan cara membuka link ini** --> `developers.google.com`
+ **Cara mendapatkan Youtube Api Key dengan cara membuka link ini** --> [youtubeapikey](https://developers.google.com/)
  
  **Dan jangan lupa untuk menginstall discord bot nya ^_^**
  
