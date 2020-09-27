@@ -33,27 +33,29 @@ bot.on("message", async (message) => { // eslint-disable-line
     if (command === "help" || command === "cmd") {
         const helpembed = new MessageEmbed()
             .setColor("BLUE")
-            .setAuthor(bot.user.tag, bot.user.displayAvatarURL())
+            .setAuthor('̶̶ ̶-̶-̶-̶-̶-̶-̶-̶-̶-̶-̶-̶-̶↬̶Help Menu↫̶̶̶-̶ ̶-̶-̶-̶-̶-̶-̶-̶-̶-̶-̶-̶-̶')
             .setDescription(`
-__**Command list**__
-> \`play\` > **\`play [title/url]\`**
-> \`search\` > **\`search [title]\`**
-> \`skip\`, \`stop\`,  \`pause\`, \`resume\`
-> \`nowplaying\`, \`queue\`, \`volume\``)
-            .setFooter("©️ 2020 Zhycorp Nation", "https://api.zhycorp.xyz/assets/images/icon.jpg");
+**Default Prefix**
+\`!\`
+**Command List**
+\`play\` > **\`play [title/url]\`**
+\`search\` > **\`search [title]\`**
+\`skip\`, \`stop\`,  \`pause\`, \`resume\`
+\`nowplaying\`, \`queue\`, \`volume\``)
+            .setFooter("Copyright © Zeeppss", bot.user.displayAvatarURL());
         message.channel.send(helpembed);
     }
     if (command === "play" || command === "p") {
         const voiceChannel = message.member.voice.channel;
-        if (!voiceChannel) return message.channel.send({embed: {color: "RED", description: "I'm sorry, but you need to be in a voice channel to play a music!"}});
+        if (!voiceChannel) return message.channel.send({embed: {color: "RED", description: "I'm sorry, But you need to be in a voice channel to play a music!"}});
         const permissions = voiceChannel.permissionsFor(message.client.user);
         if (!permissions.has("CONNECT")) {
-            return message.channel.send({embed: {color: "RED", description: "Sorry, but I need a **`CONNECT`** permission to proceed!"}});
+            return message.channel.send({embed: {color: "RED", description: "Sorry, But I need a **`CONNECT`** permission to proceed!"}});
         }
         if (!permissions.has("SPEAK")) {
-            return message.channel.send({embed: {color: "RED", description: "Sorry, but I need a **`SPEAK`** permission to proceed!"}});
+            return message.channel.send({embed: {color: "RED", description: "Sorry, But I need a **`SPEAK`** permission to proceed!"}});
         }
-        if (!url || !searchString) return message.channel.send({embed: {color: "RED", description: "Please input link/title to play music"}});
+        if (!url || !searchString) return message.channel.send({embed: {color: "RED", description: "Usage: !play [title/url]"}});
         if (url.match(/^https?:\/\/(www.youtube.com|youtube.com)\/playlist(.*)$/)) {
             const playlist = await youtube.getPlaylist(url);
             const videos = await playlist.getVideos();
@@ -63,7 +65,7 @@ __**Command list**__
             }
             return message.channel.send({embed: {
                     color: "GREEN",
-                    description: `✅  **|**  Playlist: **\`${playlist.title}\`** has been added to the queue`
+                    description: `✅  **|**  Playlist: **\`${playlist.title}\`** Has been added to the queue`
             }});
         } else {
             try {
@@ -101,7 +103,7 @@ __**Command list**__
             }
             return message.channel.send({embed: {
                 color: "GREEN",
-                description: `✅  **|**  Playlist: **\`${playlist.title}\`** has been added to the queue`
+                description: `✅  **|**  Playlist: **\`${playlist.title}\`** Has been added to the queue`
             }});
         } else {
             try {
@@ -147,7 +149,7 @@ __**Command list**__
         if (!message.member.voice.channel) return message.channel.send({embed: {color: "RED", description: "I'm sorry, but you need to be in a voice channel to skip a music!"}});
         if (!serverQueue) return message.channel.send({embed: {color: "RED", description: "There is nothing playing that I could skip for you"}});
         serverQueue.connection.dispatcher.end("[runCmd] Skip command has been used");
-        return message.channel.send({embed: {color: "GREEN", description: "⏭️  **|**  I skipped the song for you"}});
+        return message.channel.send({embed: {color: "GREEN", description: "⏭️  **|**  I Skipped the song for you"}});
 
     } else if (command === "stop") {
         if (!message.member.voice.channel) return message.channel.send({embed: {color: "RED", description: "I'm sorry but you need to be in a voice channel to play music!"}});
@@ -234,7 +236,7 @@ async function handleVideo(video, message, voiceChannel, playlist = false) {
     } else {
         serverQueue.songs.push(song);
         if (playlist) return;
-        else return message.channel.send({embed: {color: "GREEN", description: `✅  **|**  **\`${song.title}\`** has been added to the queue`}});
+        else return message.channel.send({embed: {color: "GREEN", description: `✅  **|**  **\`${song.title}\`** Has been added to the queue`}});
     }
     return;
 }
