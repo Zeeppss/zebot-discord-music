@@ -1,7 +1,7 @@
 {
   "name": "zebot-discord-music",
   "version": "1.1.0",
-  "description": "A dedicated zebot-discord-music project Made by Zeeppss",
+  "description": "Music Discord Bot Original Made By Zeeppss",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +17,7 @@
     "Npm",
     "Zeeppss"
   ],
-  "author": "iCrawl",
+  "author": "Zeeppss",
   "license": "by-nc-nd/4.0",
   "bugs": {
     "url": "https://github.com/zeeppss/zebot-discord-music/issues"
