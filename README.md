@@ -10,7 +10,7 @@
 **4).** > **Lalu ketik** `npm install` **untuk menginstall node_modules**
 
 # Setup
-**1).** > **Buka `Visual Studio Code` **kalian**
+**1).** > **Buka** `Visual Studio Code` **kalian**
 
 **2).** > **Lalu Open Folders ke files tujuan, Ubah** `.env_example` **menjadi** `.env` 
 
