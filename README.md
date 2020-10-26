@@ -21,6 +21,6 @@
 
  **Cara mendapatkan Youtube Api Key dengan cara membuka link ini** --> [youtubeapikey](https://developers.google.com/)
  
- **Dan jangan lupa untuk menginstall discord bot nya ^_^**
+ **Dan jangan lupa untuk menginstall discord bot nya!**
  
  **Ingin menghubungin Devnya?** `Discord: Zeeppss#6552`
