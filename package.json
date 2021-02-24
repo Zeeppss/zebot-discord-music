@@ -32,7 +32,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "node-opus": "^0.3.3",
-    "opusscript": "0.0.7",
+    "opusscript": "0.0.8",
     "simple-youtube-api": "^5.2.1",
     "ytdl-core": "^3.3.0"
   },
